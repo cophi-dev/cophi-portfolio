@@ -1,0 +1,139 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f8f8f8;
+  color: #101010;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 56px 24px 80px;
+}
+
+.hero {
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  max-width: 58ch;
+  color: #333;
+  line-height: 1.6;
+}
+
+.links {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+}
+
+.links a {
+  text-decoration: none;
+  border: 1px solid #222;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+.projects-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.projects-header span {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.card h3 a {
+  text-decoration: none;
+}
+
+.card p {
+  margin: 10px 0 0;
+  color: #444;
+  line-height: 1.5;
+}
+
+.meta {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #666;
+  font-size: 0.83rem;
+}
+
+.demo-link {
+  margin-top: 14px;
+  display: inline-block;
+  font-size: 0.88rem;
+}
+
+.error {
+  border: 1px solid #f2c3c3;
+  border-radius: 10px;
+  background: #fff0f0;
+  color: #781818;
+  padding: 12px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
