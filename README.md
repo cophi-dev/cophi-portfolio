@@ -2,7 +2,8 @@
 
 Minimal Next.js + TypeScript portfolio for **Cophi** — featured GitHub projects with expanded copy, screenshots, and a link to X.
 
-Project overlays and screenshot conventions: see [doc/projects.md](doc/projects.md).
+Project overlays and screenshot conventions: see [doc/projects.md](doc/projects.md).  
+GitHub profile setup: [doc/github-profile.md](doc/github-profile.md).
 
 ## Run locally
 

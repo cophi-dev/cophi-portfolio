@@ -130,6 +130,30 @@ const projectOverlays: ProjectOverlay[] = projectOverlaySchema.array().parse([
       alt: "Nano BAYC generator with token ID input and export format selector",
     },
   },
+  {
+    repoName: "aivery",
+    title: "Aivery",
+    summary:
+      "Training app that syncs with Strava and adds calm, AI-generated workout insights — daily summaries, post-workout notes, and dashboard prompts without noisy UX. Next.js, MongoDB, Stripe, and model calls behind a typed service layer.",
+    stack: ["Next.js", "MongoDB", "Strava API", "OpenAI"],
+    outcome: "Production-style fitness product focused on consistency and mindful feedback.",
+    screenshot: {
+      src: "/projects/placeholder.svg",
+      alt: "Aivery — screenshot pending (deploy aivery.app or add /projects/aivery.png)",
+    },
+  },
+  {
+    repoName: "v0-cophi-website-design",
+    title: "Cophi Agency",
+    summary:
+      "Bilingual agency site (DE/EN) for services, selected projects, pricing, and contact — minimal typography and layout. Built with Next.js and Tailwind; initial design flow via v0, deployed on Vercel.",
+    stack: ["Next.js", "Tailwind", "shadcn/ui"],
+    outcome: "Public face for client work alongside the developer portfolio.",
+    screenshot: {
+      src: "/projects/cophi-agency.png",
+      alt: "Cophi agency homepage — digital experiences hero",
+    },
+  },
 ]);
 
 const overlayByRepo = new Map(projectOverlays.map((entry) => [entry.repoName, entry]));
