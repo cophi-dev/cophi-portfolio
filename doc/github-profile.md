@@ -24,14 +24,14 @@ GitHub → profile → **Customize your pins** (max 6):
 
 ## Private repos
 
-`aivery` and `v0-cophi-website-design` are **private** — they do not appear in the public GitHub API feed this portfolio uses. To show them on the site, either make them public or add a `GITHUB_TOKEN` with `repo` scope (future enhancement).
+`v0-cophi-website-design` is **private** — it does not appear in the public GitHub API feed this portfolio uses unless you make it public.
 
 ## Live demo URLs to fix
 
 | Repo | Current homepage | Note |
 |------|------------------|------|
 | `speicherpilot` | `besorge.vercel.app` | Often 404 — update to working Vercel URL in repo **About → Website** |
-| `aivery` | `aivery.app` | DNS did not resolve — point domain or update homepage to Vercel URL |
+| `aivery` | [aivery-five.vercel.app](https://aivery-five.vercel.app) | Public repo; homepage set on GitHub |
 
 ## Re-run repo descriptions
 

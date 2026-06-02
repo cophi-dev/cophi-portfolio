@@ -138,8 +138,8 @@ const projectOverlays: ProjectOverlay[] = projectOverlaySchema.array().parse([
     stack: ["Next.js", "MongoDB", "Strava API", "OpenAI"],
     outcome: "Production-style fitness product focused on consistency and mindful feedback.",
     screenshot: {
-      src: "/projects/placeholder.svg",
-      alt: "Aivery — screenshot pending (deploy aivery.app or add /projects/aivery.png)",
+      src: "/projects/aivery.png",
+      alt: "Aivery landing page — Strava-connected training with calm AI insights",
     },
   },
   {
