@@ -59,6 +59,18 @@ const projectOverlays: ProjectOverlay[] = projectOverlaySchema.array().parse([
     },
   },
   {
+    repoName: "afa",
+    title: "AFA Editor",
+    summary:
+      "Studio for composing ApeFacingApe portraits: pick a BAYC token, mix trait layers (outfit, hat, eyes, sets), preview the render, and verify mint status before claiming on apefacingapes.com. Flask compositing API plus React UI, with OG previews for social sharing.",
+    stack: ["React", "Flask", "ethers.js", "Vercel"],
+    outcome: "Hub for the AFA mint flow — pairs with the mint-progress grid and Nano BAYC export tool.",
+    screenshot: {
+      src: "/projects/afa.png",
+      alt: "AFA Editor trait studio with live composite preview and mint gallery",
+    },
+  },
+  {
     repoName: "afa-minting-progress",
     title: "AFA Minting Progress",
     summary:
