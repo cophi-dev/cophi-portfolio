@@ -7,7 +7,7 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, formatDate }: ProjectCardProps) {
-  const { repo, summary, stack, outcome, screenshot } = project;
+  const { repo, title, summary, stack, outcome, screenshot } = project;
 
   return (
     <article className="card">
@@ -23,7 +23,7 @@ export function ProjectCard({ project, formatDate }: ProjectCardProps) {
       </div>
       <h3>
         <a href={repo.html_url} target="_blank" rel="noreferrer">
-          {repo.name}
+          {title}
         </a>
       </h3>
       <p className="card-summary">{summary}</p>

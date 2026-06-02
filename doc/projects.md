@@ -4,8 +4,9 @@ Featured projects are loaded from the GitHub API and merged with local overlays 
 
 ## Overlay entries
 
-Each overlay is keyed by repository `name` (GitHub slug, case-sensitive):
+Each overlay is keyed by canonical repository `name` (GitHub slug after rename — see [github-rename.md](./github-rename.md)). Legacy slugs are aliased in `canonicalRepoName()`.
 
+- **title** — Optional display name on the card (e.g. `SpeicherPilot` for repo `speicherpilot`).
 - **summary** — Calm, 2–4 sentences: what it is, why it exists, stack or role, outcome or learnings.
 - **stack** — Optional short list (shown as meta chips).
 - **outcome** — Optional one-line result or takeaway.
