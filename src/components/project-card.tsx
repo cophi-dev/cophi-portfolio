@@ -12,14 +12,27 @@ export function ProjectCard({ project, formatDate }: ProjectCardProps) {
   return (
     <article className="card">
       <div className="card-media">
-        <Image
-          src={screenshot.src}
-          alt={screenshot.alt}
-          width={800}
-          height={450}
-          className="card-screenshot"
-          sizes="(max-width: 768px) 100vw, 400px"
-        />
+        {repo.homepage ? (
+          <a className="card-media-link" href={repo.homepage} target="_blank" rel="noreferrer">
+            <Image
+              src={screenshot.src}
+              alt={screenshot.alt}
+              width={800}
+              height={450}
+              className="card-screenshot"
+              sizes="(max-width: 768px) 100vw, 400px"
+            />
+          </a>
+        ) : (
+          <Image
+            src={screenshot.src}
+            alt={screenshot.alt}
+            width={800}
+            height={450}
+            className="card-screenshot"
+            sizes="(max-width: 768px) 100vw, 400px"
+          />
+        )}
       </div>
       <h3>
         <a href={repo.html_url} target="_blank" rel="noreferrer">

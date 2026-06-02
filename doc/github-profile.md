@@ -20,7 +20,7 @@ GitHub → profile → **Customize your pins** (max 6):
 | **Bio** | Calm software — energy, BESS, fitness AI, and web3 tools. TypeScript & Python. |
 | **URL** | https://portfolio-delta-liart-93.vercel.app |
 | **Location** | Europe |
-| **X** | @cophi |
+| **X** | [@_cophi_](https://x.com/_cophi_) |
 
 ## Private repos
 
