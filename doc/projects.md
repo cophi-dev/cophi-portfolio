@@ -1,6 +1,6 @@
 # Project presentation
 
-Featured projects are loaded from the GitHub API and merged with local overlays in `src/lib/projects.ts`.
+Featured projects are your **pinned GitHub repositories**, in the same order as on your profile. They are loaded via the GitHub GraphQL API when `GITHUB_TOKEN` is set, otherwise from the ordered list in [github-profile.md](./github-profile.md). Local overlays in `src/lib/projects.ts` merge in copy and screenshots.
 
 ## Overlay entries
 

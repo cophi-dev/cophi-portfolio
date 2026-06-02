@@ -6,12 +6,12 @@ Profile README: **[github.com/cophi-dev/cophi-dev](https://github.com/cophi-dev/
 
 GitHub → profile → **Customize your pins** (max 6):
 
-1. `cophi-portfolio`
-2. `speicherpilot`
-3. `bess-kompass`
+1. `afa`
+2. `afa-minting-progress`
+3. `speicherpilot`
 4. `energie-quartier`
-5. `afa`
-6. `afa-minting-progress`
+5. `aivery`
+6. `cophi-portfolio`
 
 ## Profile fields (set manually if API token lacks `user` scope)
 

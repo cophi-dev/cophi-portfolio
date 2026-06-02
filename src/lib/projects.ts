@@ -50,7 +50,7 @@ const projectOverlays: ProjectOverlay[] = projectOverlaySchema.array().parse([
     repoName: "cophi-portfolio",
     title: "Cophi Portfolio",
     summary:
-      "This site — a calm Next.js portfolio that pulls featured repos from GitHub and layers in hand-written context, stack tags, and screenshots. Built to stay minimal while still explaining what each project is for.",
+      "This site — a calm Next.js portfolio that pulls pinned repos from GitHub and layers in hand-written context, stack tags, and screenshots. Built to stay minimal while still explaining what each project is for.",
     stack: ["TypeScript", "Next.js", "Zod"],
     outcome: "Dogfoods the same overlay pattern the other cards use.",
     screenshot: {

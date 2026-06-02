@@ -1,6 +1,6 @@
 import { ProjectCard } from "@/components/project-card";
 import { getPortfolioConfig } from "@/lib/config";
-import { fetchFeaturedRepos } from "@/lib/github";
+import { fetchPinnedRepos } from "@/lib/github";
 import { getProjectDisplay } from "@/lib/projects";
 import type { GitHubRepo } from "@/lib/github";
 
@@ -19,7 +19,7 @@ export default async function Home() {
   let repos: GitHubRepo[] = [];
 
   try {
-    repos = await fetchFeaturedRepos(config.GITHUB_USERNAME, config.GITHUB_REPOS_LIMIT);
+    repos = await fetchPinnedRepos(config.GITHUB_USERNAME, config.GITHUB_TOKEN);
   } catch (error) {
     reposError = error instanceof Error ? error.message : "Failed to load GitHub repositories.";
   }
@@ -33,7 +33,7 @@ export default async function Home() {
         <h1>Cophi</h1>
         <p className="subtitle">
           I build calm, useful software — products, prototypes, and experiments. This page highlights
-          recent work from GitHub with a bit more context than the repo blurbs alone.
+          pinned GitHub projects with a bit more context than the repo blurbs alone.
         </p>
         <div className="links">
           <a href={`https://github.com/${config.GITHUB_USERNAME}`} target="_blank" rel="noreferrer">

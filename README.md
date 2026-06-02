@@ -29,8 +29,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment variables
 
-- `GITHUB_USERNAME`: GitHub account to fetch repositories from
-- `GITHUB_REPOS_LIMIT`: Max number of repositories to show (1-24)
+- `GITHUB_USERNAME`: GitHub account to fetch pinned repositories from
+- `GITHUB_TOKEN` (optional): GitHub token for live pinned-repo order via GraphQL; without it, the site uses the pin list in [doc/github-profile.md](doc/github-profile.md)
 - `X_USERNAME`: X handle used for profile link
 
 ## Deploy on Vercel (via GitHub)
