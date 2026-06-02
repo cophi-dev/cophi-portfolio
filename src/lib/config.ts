@@ -12,6 +12,6 @@ export function getPortfolioConfig(): PortfolioConfig {
   return envSchema.parse({
     GITHUB_USERNAME: process.env.GITHUB_USERNAME ?? "cophi-dev",
     GITHUB_REPOS_LIMIT: process.env.GITHUB_REPOS_LIMIT ?? "6",
-    X_USERNAME: process.env.X_USERNAME ?? "pphhiillliipppp",
+    X_USERNAME: process.env.X_USERNAME ?? "cophi",
   });
 }

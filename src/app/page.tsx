@@ -1,5 +1,7 @@
+import { ProjectCard } from "@/components/project-card";
 import { getPortfolioConfig } from "@/lib/config";
 import { fetchFeaturedRepos } from "@/lib/github";
+import { getProjectDisplay } from "@/lib/projects";
 import type { GitHubRepo } from "@/lib/github";
 
 function formatDate(value: string): string {
@@ -22,13 +24,16 @@ export default async function Home() {
     reposError = error instanceof Error ? error.message : "Failed to load GitHub repositories.";
   }
 
+  const projects = repos.map(getProjectDisplay);
+
   return (
     <main className="page">
       <section className="hero">
-        <p className="eyebrow">Developer Portfolio</p>
-        <h1>Philipp</h1>
+        <p className="eyebrow">Developer portfolio</p>
+        <h1>Cophi</h1>
         <p className="subtitle">
-          I build products, prototypes, and coding projects. This page highlights my latest work from GitHub.
+          I build calm, useful software — products, prototypes, and experiments. This page highlights
+          recent work from GitHub with a bit more context than the repo blurbs alone.
         </p>
         <div className="links">
           <a href={`https://github.com/${config.GITHUB_USERNAME}`} target="_blank" rel="noreferrer">
@@ -42,7 +47,7 @@ export default async function Home() {
 
       <section className="projects">
         <div className="projects-header">
-          <h2>Featured Projects</h2>
+          <h2>Featured projects</h2>
           <span>{config.GITHUB_USERNAME}</span>
         </div>
 
@@ -50,30 +55,16 @@ export default async function Home() {
           <p className="error">Could not load projects: {reposError}</p>
         ) : (
           <div className="grid">
-            {repos.map((repo) => (
-              <article className="card" key={repo.id}>
-                <h3>
-                  <a href={repo.html_url} target="_blank" rel="noreferrer">
-                    {repo.name}
-                  </a>
-                </h3>
-                <p>{repo.description ?? "No description provided."}</p>
-                <div className="meta">
-                  <span>{repo.language ?? "Unknown"}</span>
-                  <span>{repo.stargazers_count} stars</span>
-                  <span>{repo.forks_count} forks</span>
-                  <span>Updated {formatDate(repo.pushed_at)}</span>
-                </div>
-                {repo.homepage ? (
-                  <a className="demo-link" href={repo.homepage} target="_blank" rel="noreferrer">
-                    Live demo
-                  </a>
-                ) : null}
-              </article>
+            {projects.map((project) => (
+              <ProjectCard key={project.repo.id} project={project} formatDate={formatDate} />
             ))}
           </div>
         )}
       </section>
+
+      <footer className="site-footer">
+        <p>Cophi — built with Next.js and GitHub.</p>
+      </footer>
     </main>
   );
 }

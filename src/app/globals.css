@@ -92,6 +92,23 @@ h2 {
   border: 1px solid #ddd;
   border-radius: 14px;
   padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media {
+  margin: -2px -2px 12px;
+}
+
+.card-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+  background: #f0f0f0;
 }
 
 .card h3 {
@@ -103,9 +120,16 @@ h2 {
   text-decoration: none;
 }
 
-.card p {
+.card-summary {
   margin: 10px 0 0;
   color: #444;
+  line-height: 1.55;
+}
+
+.card-outcome {
+  margin: 10px 0 0;
+  color: #555;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -130,6 +154,18 @@ h2 {
   background: #fff0f0;
   color: #781818;
   padding: 12px;
+}
+
+.site-footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.88rem;
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 @media (min-width: 768px) {

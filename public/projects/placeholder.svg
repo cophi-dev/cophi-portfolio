@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Screenshot placeholder">
+  <rect width="800" height="450" fill="#efefef"/>
+  <rect x="48" y="48" width="704" height="354" rx="12" fill="#f8f8f8" stroke="#ddd"/>
+  <text x="400" y="232" text-anchor="middle" fill="#888" font-family="system-ui, sans-serif" font-size="15">Screenshot coming soon</text>
+</svg>

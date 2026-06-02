@@ -25,7 +25,7 @@ export async function fetchFeaturedRepos(username: string, limit: number): Promi
   const response = await fetch(url, {
     headers: {
       Accept: "application/vnd.github+json",
-      "User-Agent": "portfolio-site",
+      "User-Agent": "cophi-portfolio",
     },
     next: { revalidate: 3600 },
   });

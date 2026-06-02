@@ -1,6 +1,8 @@
-# Minimal Portfolio
+# Cophi portfolio
 
-Minimal Next.js + TypeScript portfolio that showcases GitHub projects and links to X.
+Minimal Next.js + TypeScript portfolio for **Cophi** — featured GitHub projects with expanded copy, screenshots, and a link to X.
+
+Project overlays and screenshot conventions: see [doc/projects.md](doc/projects.md).
 
 ## Run locally
 
